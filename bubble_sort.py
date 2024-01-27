@@ -3,9 +3,11 @@ def bubble_sort(my_list):
     for i in range(len(my_list)-1,0,-1):
         for j in range(i):
             if my_list[j]>my_list[j+1]:
-                temp = my_list[j]
+                '''temp = my_list[j]
                 my_list[j] = my_list[j+1]
-                temp[j+1] = temp
+                my_list[j+1] = temp'''
+                #easy method to change variable in python
+                my_list[j], my_list[j+1] = my_list[j+1], my_list[j]
     return my_list
 
 print(bubble_sort([5,8,6,7,47]))
