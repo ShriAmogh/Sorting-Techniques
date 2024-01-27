@@ -1,3 +1,4 @@
+#in this sorting two elements are compared and lowest one comes forward
 def bubble_sort(my_list):
     for i in range(len(my_list)-1,0,-1):
         for j in range(i):
